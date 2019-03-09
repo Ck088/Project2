@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    z-index: 99999;
+    background: #fff;
+    width: 100%;
+    border: 1px solid gray;
+    padding: 10px;
+
+    -webkit-box-shadow: -1px 7px 48px 1px rgba(0,0,0,0.71);
+    -moz-box-shadow: -1px 7px 48px 1px rgba(0,0,0,0.71);
+    box-shadow: -1px 7px 48px 1px rgba(0,0,0,0.71);
+    }
+
+.carousel-inner .carousel-item{
+    height: 90vh;
+}
+
+.carousel-inner .carousel-item img{
+    height: 90vh;
+    width: 100%;
+}
+
+.jumbo{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.lead{
+    grid-area: p;
+}
+
+.video{
+    grid-area: iframe;
+}
+
+iframe{
+    float: right;
+}
+
+.cards{
+    display: inline-flex;
+    
+    margin: 10%;
+    
+}
+
+.cards img{
+    margin: 0% 10%;
+}
+
+
+.disc{
+    width: 300px
+}
+
+.soc{
+    float: right;
+    margin-top: -30px;
+    font-size: 30px;
+}
+.social{
+    display: inline-flex;
+}
+a i{
+    margin: 0 30px;
+    font-size: 50px;
+    color: white;
+}
+
+a i:hover{
+    text-decoration: none;
+    color: green;
+}
+
+.card{
+    display: inline-flex;
+}
+
+
+ul li a{
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.shrink{
+    height: 40px;
+    transition: 0.6s;
+    transition-timing-function: ease-in-out;
+}
+
+ul li a:hover{
+    color: black;
+    text-decoration: underline;
+
+}
+
+
+
+.carousel-caption h1{
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+.lead{
+    width: 500px;
+    float: left;
+    margin-left: 150px;
+}
+iframe{
+    margin-right: 150px;
+}
+.container1{
+    display: grid;
+    grid-template-columns: 2fr;
+}
+
+
+
+@media (max-width: 575.98px) { 
+        .container1 {
+            grid-template-columns: 1fr;
+            grid-template-areas: "img" "para" 
+          }
+
+          .container2 {
+            grid-template-columns: 1fr;
+            grid-template-areas: "para" "img" 
+          }
+
+          .container3 {
+            grid-template-columns: 1fr;
+            grid-template-areas: "img" "para" 
+          }
+    }
+
+
+@media (max-width: 767.98px) {  .container1 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "para" 
+  }
+
+  .container2 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "para" "img" 
+  }
+
+  .container3 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "para" 
+  } }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
